@@ -19,7 +19,7 @@ Deployed Aplication:
 
 ## Usage
 
-![demo](link  goes here.)
+![demo](link goes here!)
 
 ## Tests
 
