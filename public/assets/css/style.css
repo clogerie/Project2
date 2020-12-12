@@ -1,0 +1,38 @@
+.center {
+    margin: auto;
+    margin-top: 15%;
+    width: 25%;
+    background-color: black;
+    border: 5px solid white;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+};
+
+.color{ 
+    background-color: white;
+};
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:right;
+    font-family: 'Playfair Display SC', serif;
+};
+li {
+    display:inline;
+};
+a:link, a:visited{
+   text-decoration: none;
+   color: white;
+};
+a{
+    display:inline-block;
+    padding:10px
+};
+body{
+     background-image: url("https://scopeblog.stanford.edu/wp-content/uploads/2018/12/movie-theater-seats-1024x683.jpg");
+     background-position: center;
+     background-size: cover;
+};
