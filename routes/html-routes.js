@@ -14,6 +14,17 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/assets/index.html"));
+  });
+
+  // cms route loads cms.html
+  app.get("/movies", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/movies.html"));
+  });
+
+};
+=======
     res.sendFile(path.join(__dirname, "../public/blog.html"));
   });
 
@@ -33,3 +44,4 @@ module.exports = function(app) {
   });
 
 };
+
