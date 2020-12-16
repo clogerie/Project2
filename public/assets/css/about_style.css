@@ -1,3 +1,7 @@
+.container {
+	margin-top: 40px;
+}
+
 .columns {
 	margin-top: 5px;
 	padding: 10px;
@@ -55,7 +59,7 @@ h5 {
 
 .card {
 	background-color: rgb(199, 199, 199);
-	box-shadow: 2.5px 5px 4px #7a7a7a;
+	box-shadow: 2.5px 5px 4px #0e0e0e;
 }
 
 .card:hover {

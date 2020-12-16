@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href= "assets/css/style.css">
-    <link rel= "stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-    <nav>
+
+<body class="background">
+    <nav class="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movies.html">My Movies</a></li>
             <li><a href="about.html">About</a></li>
-          </ul>
+            <li><a href="movies.html">My Movies</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
     </nav>
-    <div>
+    <div class="center">
         <h1>Movie Buddy</h1>
         <form>
-            <input type="text" placeholder="Search Movie">
-            <button>Submit</button>
+            <input type="text" placeholder="Search Movie" value="">
+            <button id="submitBtn" class="white">Submit</button>
         </form>
-
     </div>
-    
-    
-</body>
+    <div id="title"></div>
+    <div id="movies-view">
+    </div>
+    </body>
+<script src="assets/js/script.js"></script>
 </html>
