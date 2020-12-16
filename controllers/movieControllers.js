@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
-const burger = require("../models/movies.js");
+const movie = require("../models/movies.js");
 
 router.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "public/index.html"));
@@ -11,13 +11,13 @@ router.get("/", function(req, res) {
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/api/movies", function(req, res) {
-  burger.all(function(data) {
+  movie.all(function(data) {
     res.json({ burger: data });
   });
 });
 
 router.post("/movies", function(req, res) {
-  burger.create([
+  movie.create([
     "name", "sleepy"
   ], [
     req.body.name, req.body.sleepy
@@ -28,9 +28,9 @@ router.post("/movies", function(req, res) {
 });
 
 router.put("/movies/:id", function(req, res) {
-const obect = {devoured: req.body.devout}
+const obect = {deleted: req.body.devout}
 
-  burger.update(obect, "id", req.params.id, function(result) {
+  movie.update(obect, "id", req.params.id, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
@@ -43,7 +43,7 @@ const obect = {devoured: req.body.devout}
 router.delete("/movies/:id", function(req, res) {
   
 
-  burger.delete(req.params.id, function(result) {
+  movie.delete(req.params.id, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
