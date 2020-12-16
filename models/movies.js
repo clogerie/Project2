@@ -1,25 +1,25 @@
 // Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 
-class Burger {
+class Movie {
   all (cb) {
-    orm.read("movies", function(res) {
+    orm.read("Movie", function(res) {
       cb(res);
     });
   }
   // The variables cols and vals are arrays.
   create (vals, cb) {
-    orm.create("movies", vals, function(res) {
+    orm.create("Movie", vals, function(res) {
       cb(res);
     });
   }
   update (vals, colName, condition, cb) {
-    orm.update("movies", vals, colName, condition, function(res) {
+    orm.update("Movie", vals, colName, condition, function(res) {
       cb(res);
     });
   }
   delete (vals, cb) {
-    orm.delete("movies", vals, function(res) {
+    orm.delete("Movie", vals, function(res) {
       cb(res);
     });
   }
