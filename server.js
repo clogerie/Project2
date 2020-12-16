@@ -1,9 +1,12 @@
 
+
 // var express = require("express");
 
 // var PORT = process.env.PORT || 8080;
 
 // var app = express();
+
+
 
 const express = require("express");
 
@@ -21,9 +24,18 @@ app.use(express.json());
 
 // Import routes and give the server access to them.
 
+
 // var routes = require("./routes/html-routes");
 
 const routes = require("./controllers/movieControllers.js");
+
+const routes = require("./controllers/movieControllers.js");
+
+
+//var routes = require("./routes/html-routes");
+const routes = require("./controllers/movieController.js");
+
+
 
 
 app.use(routes);
