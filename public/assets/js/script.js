@@ -16,6 +16,26 @@ function displayMovieInfo() {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+
+        console.log(response);
+
+        const movieToSave = {
+            title: response.Title,
+            rating: response.Rated,
+            released: response.Released,
+            plot: response.Plot,
+            poster: response.Poster,
+        }
+        console.log(movieToSave);
+        $.ajax(
+            "/api/movies",
+            {
+                type: "POST",
+                data: movieToSave,
+            }).then(function (response) {
+                console.log(response);
+            });
+
         var movieDiv = $("<div class='movie'>");
         var btn = $("<button class='btn' id='saveBtn'>Add to my List </button>")
         var title = response.Title
@@ -33,8 +53,6 @@ function displayMovieInfo() {
         movieDiv.append(image, pThree, btn);
         $("#title").append(h1);
         $("#movies-view").append(movieDiv);
-
-
 
     });
 
