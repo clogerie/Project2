@@ -39,3 +39,39 @@ a:link, a:hover, a:visited, a:active{
   background-position: center;
   background-size: cover;
 }
+.hide{
+    display: none ;
+}
+
+.movie {
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+    /* border: 5px solid white; */
+    padding: 30px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+.foo{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+.btn{
+   position: relative;
+   left: 150px;
+   color: black;
+   background-color: white;
+ 
+}

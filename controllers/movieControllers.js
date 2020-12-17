@@ -11,26 +11,27 @@ router.get("/", function(req, res) {
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/api/movies", function(req, res) {
-  movie.all(function(data) {
-    res.json({ burger: data });
+  movie.read(function(data) {
+    res.json(data);
+    console.log(data);
   });
 });
 
-router.post("/movies", function(req, res) {
-  movie.create([
-    "name", "sleepy"
-  ], [
-    req.body.name, req.body.sleepy
-  ], function(result) {
+router.post("/api/movies", function(req, res)
+{console.log(req.body);
+ movie.create(req.body, function(data) {
+   
     // Send back the ID of the new quote
-    res.json({ id: result.insertId });
+    res.json({ id: data.insertId });
+
   });
 });
 
-router.put("/movies/:id", function(req, res) {
-const obect = {deleted: req.body.devout}
+router.put("/api/movies/:id", function(req, res) {
 
-  movie.update(obect, "id", req.params.id, function(result) {
+console.log(req.body)
+
+  movie.update(req.body, "id", req.params.id, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
@@ -40,7 +41,7 @@ const obect = {deleted: req.body.devout}
   });
 });
 
-router.delete("/movies/:id", function(req, res) {
+router.delete("/api/movies/:id", function(req, res) {
   
 
   movie.delete(req.params.id, function(result) {

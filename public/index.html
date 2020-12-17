@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body class="background">
     <nav class="nav">
         <ul>
@@ -21,13 +23,18 @@
     <div class="center">
         <h1>Movie Buddy</h1>
         <form>
-            <input type="text" placeholder="Search Movie">
-            <button class="white">Submit</button>
+            <input type="text" placeholder="Search Movie" value="">
+            <button id="submitBtn" class="white">Submit</button>
         </form>
     </div>
 
-    
     <script src="../public/api.js"></script>
 
 </body>
+    <div id="title"></div>
+    <div id="movies-view">
+    </div>
+    </body>
+<script src="assets/js/script.js"></script>
+
 </html>
