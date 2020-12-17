@@ -29,3 +29,9 @@ app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
+
+db.sequelize.sync().then(function(){
+  app.listen(PORT, function(){
+    console.log("App listening on PORT" + PORT);
+  });
+});
