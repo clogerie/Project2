@@ -4,7 +4,6 @@ const PORT = process.env.PORT || 8080;
 
 const app = express();
 
-
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
@@ -14,15 +13,7 @@ app.use(express.json());
 
 // Import routes and give the server access to them.
 
-
 const routes = require("./controllers/movieControllers.js");
-
-
-
-
-
-// //var routes = require("./routes/html-routes");
-// const routes = require("./controllers/movieControllers.js");
 
 app.use(routes);
 
