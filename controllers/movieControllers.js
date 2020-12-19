@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
 router.get("/api/movies", function(req, res) {
   movie.read(function(data) {
     res.json(data);
-    console.log(data);
+    console.log(data, "this is working");
   });
 });
 
@@ -34,7 +34,9 @@ console.log(req.body)
   movie.update(req.body, "id", req.params.id, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
+      console.log("error 404")
       return res.status(404).end();
+      
     } else {
       res.json({ id: req.params.id});
     }
@@ -47,6 +49,7 @@ router.delete("/api/movies/:id", function(req, res) {
   movie.delete(req.params.id, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
+      console.log("404 error")
       return res.status(404).end();
     } else {
       res.status(200).end();

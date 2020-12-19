@@ -23,8 +23,8 @@ app.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
 });
 
-db.sequelize.sync().then(function(){
-  app.listen(PORT, function(){
-    console.log("App listening on PORT" + PORT);
-  });
-});
+// db.sequelize.sync().then(function(){
+//   app.listen(PORT, function(){
+//     console.log("App listening on PORT" + PORT);
+//   });
+// });
