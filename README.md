@@ -4,7 +4,7 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 Deployed Aplication:
-[Movie Buddy App](https://github.com/clogerie/movie-buddy-project)
+[Movie Buddy App](*** ADDED HEROKU LINK***)
 
 | Table of Contents |
 | ----------------- |
