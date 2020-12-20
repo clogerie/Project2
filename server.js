@@ -25,15 +25,10 @@ app.use(express.json());
 // Import routes and give the server access to them.
 
 
-// var routes = require("./routes/html-routes");
 
 const routes = require("./controllers/movieControllers.js");
 
-const routes = require("./controllers/movieControllers.js");
 
-
-//var routes = require("./routes/html-routes");
-const routes = require("./controllers/movieController.js");
 
 
 
@@ -45,3 +40,9 @@ app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
+
+// db.sequelize.sync().then(function(){
+//   app.listen(PORT, function(){
+//     console.log("App listening on PORT" + PORT);
+//   });
+// });

@@ -6,7 +6,13 @@ USE moviebuddy_db;
 CREATE TABLE movies
 (
 	id int NOT NULL AUTO_INCREMENT,
-	movie_name varchar(20) NOT NULL,
+	title varchar(101) NOT NULL,
+    rating varchar(11) NULL,
+	released varchar(30) NULL,
+    plot varchar(255) NULL,
+	poster varchar(255) NULL,
 	deleted BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+
+
