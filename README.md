@@ -39,27 +39,27 @@ Feel free to contact us for any question. We'd be more then happy to help.
 
 ![Alex Pic](./public/assets/images/alexss.png)
 
-Alex [GitHub](https://github.com/aafernands) | [Email](alexpharma@outlook.com)
+Alex [GitHub](https://github.com/aafernands) | [Email](alexfernands@outlook.com)
 
 ![Anita Pic](./public/assets/images/anitas.png)
 
-Anita [GitHub](https://github.com/Anitta29) | [Email](#)
+Anita [GitHub](https://github.com/Anitta29) | [Email](dananiuta@gmail.com)
 
 ![Carl Pic](./public/assets/images/carls.png)
 
-Carl [GitHub](#) | [Email](#)
+Carl [GitHub](https://github.com/clogerie) | [Email](clogerie@gmail.com)
 
 ![Erik Pic](./public/assets/images/eriks.png)
 
-Erik [GitHub](#) | [Email](#)
+Erik [GitHub](https://github.com/Erikulerio) | [Email](ulerioerik@gmail.com)
 
 ![Francis Pic](./public/assets/images/francis.png)
 
-Francis [GitHub](#) | [Email](#)
+Francis [GitHub](https://github.com/mrpagz) | [Email](francisroy1124@gmail.com)
 
 ![Isha Pic](./public/assets/images/ishas.png)
 
-Isha [GitHub](./public/assets/images/ishas.png) | [Email](#)
+Isha [GitHub](https://github.com/ishakhosla131) | [Email](ishakhosla131@gmail.com)
 
 ## License
 
