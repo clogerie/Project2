@@ -64,4 +64,29 @@ $("#saveBtn").click(function (event) {
     //save to list function 
 })
 
+ // This function grabs todos from the database and updates the view
+ function getMovies() {
+    $.get("/api/movies", function(data) {
+      movie = data;
+      initializeRows();
+    });
+  }
 
+// This function deletes a todo when the user clicks the delete button
+function deleteMovie(event) {
+    event.stopPropagation();
+    var id = $(this).data("id");
+    $.ajax({
+      method: "DELETE",
+      url: "/api/movies/" + id
+    }).then(get);
+  }
+
+  // This function updates a todo in our database
+  function updateMovie(movie) {
+    $.ajax({
+      method: "PUT",
+      url: "/api/movies",
+      data: movie
+    }).then(getMovies);
+  }
