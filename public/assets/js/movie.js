@@ -1,7 +1,7 @@
 const MY_MOVIES = $("#my_movies")
 getMovies()
 
-// This function grabs todos from the database and updates the view
+// This function grabs movies from the database and updates the view
 function getMovies() {
     $.get("/movies").then(function (response) {
         Display_Movies(response)
@@ -24,7 +24,7 @@ function Movie_Card(movie) {
     return parent
 }
 
-// This function deletes a todo when the user clicks the delete button
+// This function deletes a movie when the user clicks the delete button
 function delete_movie() {
     const id = $(this).attr("data-id")
     $.ajax({
@@ -36,8 +36,7 @@ function delete_movie() {
 }
 
 
-
-// This function updates a todo in our database
+// This function updates a movie in our database
 function updateMovie(movie) {
     $.ajax({
         method: "PUT",
