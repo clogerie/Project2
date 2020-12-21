@@ -16,6 +16,7 @@ Deployed Aplication:
 | [License](#License) |
 
 ## Project Description
+    An application where users can view movies, descriptions, and ratings. They can also bookmark and save movies that they search as well as save the movies they have seen.
 
 ## Usage
 
@@ -25,8 +26,18 @@ Deployed Aplication:
 ![GitHub license](https://img.shields.io/badge/tests-100%25-success)
 
 ## Summary
+People are stuck at home during quarantine with nothing to watch. Movie Buddy helps by providing a simple way for people to create a playlist of their favorite movies and binge watch during quarantine.
 
 ## Contributing
+Front-end:
+Isha Khosla
+Alex Fernandes
+Erik Ulerio
+
+Back-end:
+Carl Logerie
+Francis Roy Balasabas
+Anita Danyshchk
 
 ## Questions?
 

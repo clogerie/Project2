@@ -1,5 +1,4 @@
-### Schema
-
+DROP DATABASE IF EXISTS moviebuddy_db;
 CREATE DATABASE moviebuddy_db;
 USE moviebuddy_db;
 
