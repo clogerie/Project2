@@ -1,5 +1,4 @@
-### Schema
-
+DROP DATABASE IF EXISTS moviebuddy_db;
 CREATE DATABASE moviebuddy_db;
 USE moviebuddy_db;
 
@@ -14,5 +13,3 @@ CREATE TABLE movies
 	deleted BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
-
-
