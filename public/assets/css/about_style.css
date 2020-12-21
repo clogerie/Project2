@@ -11,7 +11,6 @@
 img {
 	width: 100px;
 	filter: grayscale(100%);
-
 }
 
 .socialIcons {
@@ -69,8 +68,6 @@ h5 {
 .card:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
-
-
 }
 
 .box {
