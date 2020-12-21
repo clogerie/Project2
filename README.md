@@ -9,7 +9,6 @@ Deployed Aplication:
 | ----------------- |
 | [Usage](#Usage)   |
 | [Tests](#Tests)   |
-
 | [Summary](#Summary)
 | [Questions](#Questions) |
 | [Contributing](#Contributing) |add .
