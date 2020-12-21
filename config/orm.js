@@ -3,7 +3,7 @@ const connection = require("./connection.js");
 
 // Object for all our SQL statement functions.
 class Orm {
-  read (tableInput, cb) {
+  all (tableInput, cb) {
     const queryString = "SELECT * FROM ??";
     connection.query(queryString, [tableInput], function(err, result) {
       if (err) {

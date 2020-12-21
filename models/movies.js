@@ -2,7 +2,7 @@
 var orm = require("../config/orm.js");
 
 class Movie {
-  all (cb) {
+  read (cb) {
     orm.read("movies", function(res) {
       cb(res);
     });
