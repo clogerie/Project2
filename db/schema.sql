@@ -13,5 +13,3 @@ CREATE TABLE movies
 	deleted BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
-
-
