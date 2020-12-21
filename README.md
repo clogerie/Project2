@@ -1,4 +1,3 @@
-
 # MOVIE BUDDY APP
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
@@ -10,6 +9,7 @@ Deployed Aplication:
 | ----------------- |
 | [Usage](#Usage)   |
 | [Tests](#Tests)   |
+
 | [Summary](#Summary)
 | [Questions](#Questions) |
 | [Contributing](#Contributing) |add .
@@ -22,6 +22,7 @@ Deployed Aplication:
 ![demo](link goes here!)
 
 ## Tests
+
 ![GitHub license](https://img.shields.io/badge/tests-100%25-success)
 
 ## Summary
