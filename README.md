@@ -1,34 +1,65 @@
-
 # MOVIE BUDDY APP
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 Deployed Aplication:
-[Movie Buddy App](*** ADDED HEROKU LINK***)
+[Movie Buddy App](**_ ADDED HEROKU LINK_**)
 
-| Table of Contents |
-| ----------------- |
-| [Usage](#Usage)   |
-| [Tests](#Tests)   |
-| [Summary](#Summary)
-| [Questions](#Questions) |
-| [Contributing](#Contributing) |add .
-| [License](#License) |
+| Table of Contents             |
+| ----------------------------- |
+| [Installation](#Installation) |
+| [Usage](#Usage)               |
+| [Tests](#Tests)               |
+| [Questions](#Questions)       |
+| [License](#License)           |
 
 ## Project Description
+
+The current world pandemic situation makes people more then ever search for enternaiment once stay indoors is becoming more necesssary. This movie search app allows users to search for a movie and save it in a list of favorites. This application uses a Node and Express web server and it has a folder sctructure that follows the MVC paradigm. It's back ended by a MySQL database and have GET, POST, PUT and DELETE routes that read, update and delete data. For the UI was used the library Skeleton. The final version was deployed on Heroku.
+
+## Installation
+
+To install this application run the following command on the terminal:
+
+`$ npm install`
+
+`$ npm start`
 
 ## Usage
 
 ![demo](link goes here!)
 
 ## Tests
+
 ![GitHub license](https://img.shields.io/badge/tests-100%25-success)
 
-## Summary
-
-## Contributing
-
 ## Questions?
+
+Feel free to contact us for any question. We'd be more then happy to help.
+
+![Alex Pic](./public/assets/images/alexss.png)
+
+Alex [GitHub](https://github.com/aafernands) | [Email](alexpharma@outlook.com)
+
+![Anita Pic](./public/assets/images/anitas.png)
+
+Anita [GitHub](https://github.com/Anitta29) | [Email](#)
+
+![Carl Pic](./public/assets/images/carls.png)
+
+Carl [GitHub](#) | [Email](#)
+
+![Erik Pic](./public/assets/images/eriks.png)
+
+Erik [GitHub](#) | [Email](#)
+
+![Francis Pic](./public/assets/images/francis.png)
+
+Francis [GitHub](#) | [Email](#)
+
+![Isha Pic](./public/assets/images/ishas.png)
+
+Isha [GitHub](./public/assets/images/ishas.png) | [Email](#)
 
 ## License
 
