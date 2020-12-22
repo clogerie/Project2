@@ -1,30 +1,20 @@
 {
-  "name": "Project2",
+  "name": "project-2",
   "version": "1.0.0",
-  "description": "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
-  "main": "CRUD.js",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
-
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clogerie/movie-buddy-project.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/clogerie/movie-buddy-project/issues"
-  },
-  "homepage": "https://github.com/clogerie/movie-buddy-project#readme"
-=======
-  }
-
+  "license": "ISC"
 }
