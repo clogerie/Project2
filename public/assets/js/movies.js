@@ -17,9 +17,9 @@ function Display_Movies(movies) {
     }
 }
 function Movie_Card(movie) {
-    const parent = $("<div>").attr("data-id", movie.id)
-
+    const parent = $("<div class='padding'>").attr("data-id", movie.id);
     const title = $("<h1>").text(movie.title)
+    const plot = $("<p>").text(movie.plot)
 
     const details = $("<div>")
         .addClass("details")
@@ -33,13 +33,13 @@ function Movie_Card(movie) {
 
     const poster = $("<img>")
         .attr("src", movie.poster)
-        .css("height", "50px")
+        .css("height", "100px")
 
-    const watched = $("<li>")
+    const watched = $("<p>")
     if (movie.watched) watched.text("Seen")
     else watched.text("Unseen")
 
-    const rating = $("<li>").text("Rating: " + movie.rating)
+    const rating = $("<p>").text("Rating: " + movie.rating)
 
     attributes.append(watched, rating)
     details.append(poster, attributes)
@@ -58,26 +58,13 @@ function Movie_Card(movie) {
     const view = $("<button>")
         .text("View")
         .click(viewMovie)
-
-    parent.append(title, details, remove, update, view)
+    
+   
+    parent.append(title, details, plot, remove, update, view)
     return parent
 }
 
 
-
-//     const title = $("<h1 class= 'whiteFont'>").text(movie.title)
-//     const plot = $("<p class= 'whiteFont'>").text(movie.plot)
-//     const remove = $("<button class='white'>")
-//         .text("Delete")
-//         .attr("data-id", movie.id)
-//         .click(delete_movie)
-//     const update = $("<button class='white'>")
-//         .text("Watched")
-//         .attr("data-id", movie.id)
-//         .click(updateMovie)
-//     parent.append(title, plot, remove, update)
-//     return parent
-// }
 // This function deletes a todo when the user clicks the delete button
 function delete_movie() {
     const id = $(this).attr("data-id")
