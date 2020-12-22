@@ -9,11 +9,20 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpagz/Project2changes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpagz/Project2changes/issues"
+  },
+  "homepage": "https://github.com/mrpagz/Project2changes#readme"
 }

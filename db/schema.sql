@@ -11,5 +11,6 @@ CREATE TABLE movies
     plot varchar(255) NULL,
 	poster varchar(255) NULL,
 	deleted BOOLEAN DEFAULT false,
+	watched BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
