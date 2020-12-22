@@ -7,7 +7,7 @@ var movie = {
       cb(res);
     });
   },
-  
+
   create: function (ob, cb) {
     const cols = ['title', 'rating', 'released', 'plot', 'poster']
     const vals = [ob.title, ob.rating, ob.released, ob.plot, ob.poster]
@@ -15,10 +15,10 @@ var movie = {
       cb(res);
     });
   },
-  update: function (value, colName, condition, cb) {
-    orm.update("movies", value, colName, condition, function (res) {
-      cb(res);
-    });
+  UpdateById: function (id, value, cb) {
+    const condition = "id = " + id
+
+    orm.update("movies", value, condition, cb);
   },
   deleteById: function (id, cb) {
     var condition = "id = " + id;

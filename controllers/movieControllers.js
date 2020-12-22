@@ -13,28 +13,18 @@ router.get("/", function (req, res) {
 router.post("/", function (req, res) {
   movie.create(req.body, function (result) {
     // console.log("Controller hit!");
-    
+
     res.json(result);
   });
 });
 
 router.put("/:id", function (req, res) {
-  var condition = "id = " + req.params.id;
-  // console.log("==========");
-  // console.log(req.body);
-  // console.log("==========");
-  // console.log("condition", condition);
-const watched = {
-  deleted: req.body.deleted
-}
-  movie.update(watched, "id", req.params.id, function (result) {
-      if (result.changedRows == 0) {
-        // If no rows were changed, then the ID must not exist, so 404
-        return res.status(404).end();
-      } else {
-        return res.status(200).end();
-      }
-    });
+  console.log(req.body)
+
+  movie.UpdateById(req.params.id, req.body, function (err, result) {
+    if (err) return res.status(404).end();
+    res.status(200).end();
+  });
 });
 
 router.delete("/:id", function (req, res) {
