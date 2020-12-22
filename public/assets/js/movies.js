@@ -50,7 +50,7 @@ function Movie_Card(movie) {
         .click(delete_movie)
 
     const update = $("<button>")
-        .text("Update")
+        .text("Mark as Viewed")
         .attr("data-id", movie.id)
         .attr("data-watched", movie.watched)
         .click(updateMovie)
