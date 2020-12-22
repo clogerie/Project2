@@ -7,7 +7,7 @@ var movie = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
+  
   create: function (ob, cb) {
     const cols = ['title', 'rating', 'released', 'plot', 'poster']
     const vals = [ob.title, ob.rating, ob.released, ob.plot, ob.poster]
@@ -15,8 +15,8 @@ var movie = {
       cb(res);
     });
   },
-  update: function (objColVals, condition, cb) {
-    orm.update("movies", objColVals, condition, function (res) {
+  update: function (value, colName, condition, cb) {
+    orm.update("movies", value, colName, condition, function (res) {
       cb(res);
     });
   },
@@ -25,8 +25,14 @@ var movie = {
     orm.delete("movies", condition, function (res) {
       cb(res);
     });
+  },
+  findById: function (id, cb) {
+    var condition = "id = " + id;
+    orm.findOne("movies", condition, function (res) {
+      cb(res);
+    });
   }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (movieControllers.js).
 module.exports = movie;
