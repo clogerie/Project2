@@ -16,36 +16,36 @@ function printQuestionMarks(num) {
 function objToSql(ob) {
   var arr = [];
 
-  
+
   for (var key in ob) {
     var value = ob[key];
-    
+
     if (Object.hasOwnProperty.call(ob, key)) {
-      
+
       if (typeof value === "string") {
         value = "'" + value + "'";
       }
-     
+
       arr.push(key + "=" + value);
     }
   }
 
- 
+
   return arr.toString();
 }
 
 
 var orm = {
-  all: function(tableInput, cb) {
+  all: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       cb(result);
     });
   },
-  create: function(table, cols, vals, cb) {
+  create: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
@@ -57,7 +57,7 @@ var orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, vals, function(err, result) {
+    connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
       }
@@ -65,28 +65,18 @@ var orm = {
       cb(result);
     });
   },
-  
-  update: function(table, value, colName, condition, cb) {
-    const  queryString = "UPDATE ?? SET ? WHERE ?? = ? ";
 
-console.log("....")
-console.log(table, value, colName, condition)
-console.log("...")
-    connection.query(queryString, [table, value, colName, condition], function(err, result) {
-     
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
+  update: function (table, value, condition, cb) {
+    const queryString = "UPDATE ?? SET ? WHERE " + condition;
+    const data = [table, value]
+    connection.query(queryString, data, cb);
   },
-  delete: function(table, condition, cb) {
+  delete: function (table, condition, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
     queryString += condition;
 
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -94,12 +84,12 @@ console.log("...")
       cb(result);
     });
   },
-  findOne: function(table, condition, cb) {
+  findOne: function (table, condition, cb) {
     var queryString = "SELECT * FROM " + table;
     queryString += " WHERE ";
     queryString += condition;
 
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
