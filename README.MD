@@ -37,7 +37,7 @@ To install this application run the following command on the terminal:
 
 Feel free to contact us for any question. We'd be more then happy to help.
 
-![Alex Pic](./public/assets/images/alexss.png)
+![Alex Pic](./public/assets/images/alexs.png)
 
 Alex [GitHub](https://github.com/aafernands) | [Email](alexfernands@outlook.com)
 
