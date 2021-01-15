@@ -1,7 +1,7 @@
 # MOVIE BUDDY APP
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 Deployed Aplication:
-[Movie Buddy App](**_ ADDED HEROKU LINK_**)
+[Movie Buddy App](https://moviebuddy1.herokuapp.com/)
 | Table of Contents             |
 | ----------------------------- |
 | [Installation](#Installation) |
@@ -24,19 +24,19 @@ To install this application run the following commands on the terminal:
 ## Tests
 ![GitHub license](https://img.shields.io/badge/tests-100%25-success)
 ## Questions?
-Feel free to contact us for any question. We'd be more then happy to help.
-![Alex Pic](./public/assets/images/alexs.png)
-Alex [GitHub](https://github.com/aafernands) | [Email](alexfernands@outlook.com)
-![Anita Pic](./public/assets/images/anitas.png)
-Anita [GitHub](https://github.com/Anitta29) | [Email](dananiuta@gmail.com)
-![Carl Pic](./public/assets/images/carls.png)
-Carl [GitHub](https://github.com/clogerie) | [Email](clogerie@gmail.com)
-![Erik Pic](./public/assets/images/eriks.png)
-Erik [GitHub](https://github.com/Erikulerio) | [Email](ulerioerik@gmail.com)
-![Francis Pic](./public/assets/images/francis.png)
-Francis [GitHub](https://github.com/mrpagz) | [Email](francisroy1124@gmail.com)
-![Isha Pic](./public/assets/images/ishas.png)
-Isha [GitHub](https://github.com/ishakhosla131) | [Email](ishakhosla131@gmail.com)
+Feel free to contact us for any question. We'd be more then happy to help. <br>
+![Alex Pic](./public/assets/images/alexs.png) <br>
+Alex [GitHub](https://github.com/aafernands) | [Email](alexfernands@outlook.com) <br>
+![Anita Pic](./public/assets/images/anitas.png) <br>
+Anita [GitHub](https://github.com/Anitta29) | [Email](dananiuta@gmail.com) <br>
+![Carl Pic](./public/assets/images/carls.png) <br>
+Carl [GitHub](https://github.com/clogerie) | [Email](clogerie@gmail.com) <br>
+![Erik Pic](./public/assets/images/eriks.png) <br>
+Erik [GitHub](https://github.com/Erikulerio) | [Email](ulerioerik@gmail.com) <br>
+![Francis Pic](./public/assets/images/francis.png) <br>
+Francis [GitHub](https://github.com/mrpagz) | [Email](francisroy1124@gmail.com) <br>
+![Isha Pic](./public/assets/images/ishas.png) <br>
+Isha [GitHub](https://github.com/ishakhosla131) | [Email](ishakhosla131@gmail.com) <br>
 ## License
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
