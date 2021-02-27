@@ -13,14 +13,21 @@ Deployed Aplication:
 The current world pandemic situation makes people more then ever search for enternaiment once stay indoors is becoming more necesssary. This movie search app allows users to search for a movie and save it in a list of favorites. This application uses a Node and Express web server and it has a folder sctructure that follows the MVC paradigm. It's back ended by a MySQL database and have GET, POST, PUT and DELETE routes that read, update and delete data. For the UI was used the library Skeleton. The final version was deployed on Heroku.
 ## Installation
 To install this application run the following commands on the terminal:
+<br>
 `$ npm install`
+<br>
 `$ npm express`
+<br>
 `$ npm mySQL`
+<br>
 `$ npm mySQL2`
+<br>
 `$ npm sequelize`
+<br>
 `$ npm start`
+<br>
 ## Usage
-![demo](link goes here!)
+![demo.gif](./public/assets/demo.gif)
 ## Tests
 ![GitHub license](https://img.shields.io/badge/tests-100%25-success)
 ## Questions?
